@@ -30,18 +30,39 @@ function normalImg(x) {
     window.alert("Welcome!");
     </script>
 
-    <p style= "font-size:20px;"> Hello! My name is Amy. I am from Brooklyn New York. </p>
 
 <ul style="list-style-type:disc; font-size:20px">
   <li>My favorite color is blue</li>
   <li>I love ice cream</li>
   <li>My favorite show is The Flash</li>
   <li> I hate bugs</li>
+  <center>
   <p id="demo">Click the button for more info</p>
   <button type="button" onclick='document.getElementById("demo").innerHTML = "I am afraid of heights"'>Click Me!</button>
+</center>
+<h2> Favorite websites </h2>
+
+<head>
+<style>
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=60); 
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+</style>
+</head>
+<body>
 
   <a href="http://www.redcross.org/"><img src="redcross.jpg" style="width:250px;height:250px;"></a>
   <a href="http://www.keyclub.org/home.aspx"><img src="keyclub.jpg" style="width:250px;height:250px;">
+
+
+</body>
+
 
 </ul>
 </center>
