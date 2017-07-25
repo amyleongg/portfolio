@@ -13,20 +13,35 @@ p.normal {
 <p class="normal" style="font-family:impact;font-size:55px;">About Me</p>
 </h1>
 
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="newyork.jpg">
+<script>
+function bigImg(x) {
+    x.style.height = "550px";
+    x.style.width = "850px";
+}
+function normalImg(x) {
+    x.style.height = "450px";
+    x.style.width = "750px";
+}
+</script>
 
-    <img src="newyork.jpg" style="width:750px;height:450px;">
   <body style="background-color:lightsteelblue">
+    <script>
+    window.alert("Welcome!");
+    </script>
 
-    <p> Hello! My name is Amy. I am from Brooklyn New York. </p>
+    <p style= "font-size:20px;"> Hello! My name is Amy. I am from Brooklyn New York. </p>
 
-<ul style="list-style-type:disc">
+<ul style="list-style-type:disc; font-size:20px">
   <li>My favorite color is blue</li>
   <li>I love ice cream</li>
   <li>My favorite show is The Flash</li>
   <li> I hate bugs</li>
-  <li> I am afraid of heights</li>
-  <img src="redcross.jpg" style="width:250px;height:250px;">
-  <img src="keyclub.jpg" style="width:250px;height:250px;">
+  <p id="demo">Click the button for more info</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "I am afraid of heights"'>Click Me!</button>
+
+  <a href="http://www.redcross.org/"><img src="redcross.jpg" style="width:250px;height:250px;"></a>
+  <a href="http://www.keyclub.org/home.aspx"><img src="keyclub.jpg" style="width:250px;height:250px;">
 
 </ul>
 </center>
